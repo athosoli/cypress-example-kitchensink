@@ -6,6 +6,9 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
+    - name: Cypress.io
+       uses: cypress-io/github-action@v2.9.7
+
       - name: Checkout
         uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
